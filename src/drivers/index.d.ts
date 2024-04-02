@@ -15,6 +15,7 @@ export interface ConnectOptions {
   models?: (typeof AbstractBone)[] | string;
   subclass?: boolean;
   driver?: typeof AbstractDriver;
+  debug?: boolean;
 }
 
 export class AbstractDriver {

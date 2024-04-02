@@ -51,6 +51,7 @@ class MysqlDriver extends AbstractDriver {
       host, port, user, password,
       connectTimeout, connectionLimit, charset, stringifyObjects = true,
       decimalNumbers = true,
+      debug,
     } = opts;
 
     if (client !== 'mysql' && client !== 'mysql2') {
@@ -68,6 +69,7 @@ class MysqlDriver extends AbstractDriver {
       charset,
       stringifyObjects,
       decimalNumbers,
+      debug,
     });
   }
 
